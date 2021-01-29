@@ -4,87 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Survey Form</title>
+    <title>Nav Drop-down page</title>
 </head>
 <body>
-    <header>
-     <h1 id="title">Survey Form</h1>
-
-     <p class="description">Thank you for taking some time to help us know how we can improve FreeCodeCamp</p>
-
-    </header>  
-
-    <div class="container">
-
-            <form method="POST" data-netlify="true" id="survey-form">
-                <!--personal imfo-->
-                <div class="personal-imformation">
-                    <label for="name" class="name-p"> Name <input type="text" id="name" placeholder="Name"></label><br>
-                    <label for="email" class="email-p"> Email  <input type="email" id="email" placeholder="Email" required ></label><br>
-                    <label for="age" class="age-p"> Age <input type="number" id="age" placeholder="Age"></label><br> 
+<header>
+    <div class="nav-mobile-display">
+       
+        <div class="hamIcon">
+             <img src="images/dropDownbckgrd.png" width="40px" height="40px" alt="">
+             <h1 >&#9776;</h1>
+        </div>
+        
+      <div class="mobile-display">
+           
+     <nav class="nav-bar">
+        <img src="images/dropDownbckgrd.png" width="40px" height="40px" alt="">
+        <ul class="main-ul">
+            <li class="active main-li"><a href="" >Home</a></li>
+            <li class="ative main-li"><a href="">About Us</a>
+                <div class="sub-menu1">
+                    <ul>
+                        <li><a href="">Mission</a></li>
+                        <li><a href="">Vision</a></li>
+                        <li><a href="">Team</a></li>
+                    </ul>
                 </div>
-
-               <!--current role selection-->
-                <div class="current-role">
-                    <p> Which option best describes your current role</p>
-                    <select name="current-role" id="dropdown" >
-                            <option value="">please select an option</option>
-                            <option value="student">Student</option>
-                            <option value="tutor">Tutor</option>
-                            <option value="front-end-dev">Front End Developer</option>
-                            <option value="back-end-dev">Back End Developer</option>
-                            <option value="fullstack">Fullstack</option>
-                            <option value="others">Others</option>
-                    </select>
+            </li>
+            <li class="ative main-li"><a href="">Services</a>
+                <div class="sub-menu1">
+                    <ul>
+                        <li><a href="">Web Designing</a></li>
+                        <li class="hover-me"><a href="">Marketing</a>
+                        <div class="sub-menu2">
+                            <ul>
+                                <li><a href="">SEO</a></li>
+                                <li><a href="">Social Media</a></li>
+                                <li><a href="">Email Marketing</a></li>      
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="hover-me"><a href="">Mobile App</a>
+                            <div class="sub-menu2">
+                                <ul>
+                                    <li><a href="">Andriod Apps</a></li>
+                                    <li><a href="">IOS Apps</a></li>
+                                    <li><a href="">Ionic Apps</a></li>  
+                                    <li><a href="">Flutter Apps</a></li>    
+                                    <li><a href="">Unity Apps</a></li>  
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-                <!--recommendation-->
-
-                <div class="recommendation">
-                    <p>How likely is it that you would recommend FreeCodeCamp to a friend?</p>
-                    <label for="definitely"><input type="radio" name="recommend">Definitely</label>
-                    <label for="maybe"><input type="radio" name="recommend" required="required">Maybe</label>
-                    <label for="not-sure"><input type="radio" name="recommend">Not sure</label> 
-                </div>
-
-               <!--preferences-->
-                <div class="preferences">
-                    <p for="preferences">What do you like most in FCC: </p>
-                    <select name="preferences" id="">
-                        <option value="">Select an option</option>
-                        <option value="">Back-end Projects</option>
-                        <option value="">Challenges</option>
-                        <option value="">Data Visualization</option>
-                        <option value="">Front-end Projects</option>
-                        <option value="">Gitter Help Room</option>
-                        <option value="">Open Source Community</option>
-                        <option value="">Videos</option>
-                    </select>
-                </div>
-
-                <!--problems-->
-                <div class="problems">
-                    <p>What would you like to see improved the future (check all that applies)</p>
-                     <label for="front-end"><input type="checkbox" name="front-end">Back-end Projects</label>
-                     <label for="back-end"><input type="checkbox" name="back-end">Challenges</label>
-                     <label for="data-visualization"><input type="checkbox" name="data-visualizaton">Data Visualization</label>
-                     <label for="front-end"><input type="checkbox" name="front-end">Front-end Projects</label>
-                     <label for="front-end"><input type="checkbox" name="front-end">Gitter Help Room</label>
-                     <label for="front-end"><input type="checkbox" name="front-end">Open Source Community</label>
-                     <label for="front-end"><input type="checkbox" name="front-end">Videos</label>
-                </div>
-
-                <div class="message">
-                    <p>Any comments or suggestions?</p>
-                    <textarea rows="7" style="font-size:2vw; width:80%;"></textarea>
-                </div>
-                
-
-                <input type="submit" class="button"></input>
-            </form>
+            </li>
+            <li class="main-li"><a href="">Clinents</a></li>
+            <li class="main-li"><a href="">Investors</a></li>
+            <li class="main-li"><a href="">Pricing</a></li>
+            <li class="main-li"><a href="">Training</a></li>
+            <li class="main-li"><a href="">Contact</a></li>
+        </ul>
+     </nav>
+     </div> 
     </div>
-   
+    
   
+</header>
 
+    <div class="main"></div>
+    
 </body>
 </html>
